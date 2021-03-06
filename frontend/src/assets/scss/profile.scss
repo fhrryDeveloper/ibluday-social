@@ -1,0 +1,67 @@
+.app-profile{
+    .app-profile-cover{
+        height: 250px;
+    }
+    .app-profile-tabcard{
+        box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+        margin: 16px 0px;
+    }
+    .app-profile-tabbar{
+        flex-grow: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    .app-profile-userinfo-table{
+        margin-top: 16px;
+    }
+    .app-profile-about-table-cell{
+        border: none;
+        padding: 8px 16px;
+        padding-left: 0px;
+        color: rgba(0,0,0,0.54);
+        a{
+            text-decoration: none;
+            color: #2196f3;
+        }
+    }
+    .app-profile-photo-list{
+        padding-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .app-profile-photo-media{
+        width: 60px;
+        height: 60px;
+        padding: 4px;
+        background-clip: content-box;
+        border-radius: 8px;
+    }
+    .app-profile-full{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -100px;
+        flex-direction: column;
+        .app-profile-avatar{
+            border-radius: 8px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+        }
+        p{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 8px 0px;
+            margin-bottom: 4px;
+        }
+    }
+    .app-profile-cover-parent{
+        position: relative;
+    }
+}

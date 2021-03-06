@@ -1,0 +1,130 @@
+.app-chat{
+    width: 100%;
+    height: 100%;
+    .app-chst-section{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+
+        .app-chat-left-section{
+            height: 100%;
+            width: 350px;
+
+            .app-chat-section-tab{
+                min-width: 50px;
+                font-size: 10px;
+            }
+            
+            .app-chat-user-list{
+                height: 100%;
+                .app-chat-tabpanel{
+                    height: calc(100% - 128px);
+                }
+                .app-styles-card-header{
+                    transition : box-shadow 0.3s;
+                    transition-timing-function: cubic-bezier(.42,.75,.83,.67);
+                    &:hover{
+                        cursor: pointer;
+                        box-shadow : 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+                    }
+                }
+            }
+        }
+        .app-card-list-padding{
+            padding-right: 15px;
+            padding-left: 5px;
+        }
+        .app-chat-card-content{
+            height: 100%;
+        }
+        .app-chat-right-section{
+            width: calc(100% - 350px);
+            height: 100%;
+
+            .app-chat-chat-container{
+                height: 100%;
+
+                .app-chat-chat-list{
+                    height: calc(100% - 74px - 80px);
+                    padding-bottom: 5px;
+                }
+                .app-chat-chat-message{
+                    height: calc(80px);
+                }
+            }
+            .app-chat-list-box{
+                padding-right: 16px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                &.right{
+                    flex-direction: row-reverse;
+                    justify-content: flex-start
+                }
+                &.left{
+                    justify-content: flex-start;
+                }
+
+                .app-avatar{
+                    margin: 0px 8px;
+                    margin-top: -45px;
+                    width: 50px;
+                    height: 50px;
+                    &.no-visible{
+                        visibility: hidden;
+                    }
+                }
+
+                .app-date-username{
+                    position: absolute;
+                    top: 5px;
+                    
+                    &.right{
+                        right : 82px
+                    }
+                    &.left{
+                        left : 66px
+                    }
+                }
+            }
+            .app-chat-card-header-skelton{
+                height: 74px;
+            }
+            .app-chat-list-content{
+                padding: 12px 16px;
+                overflow-wrap : anywhere;
+            }
+            .app-chat-list{
+                max-width: 80%;
+                min-width: 100px;
+                animation-duration: 0.2s !important;
+            }
+            .app-chat-list-right{
+                margin: 4px 0px;
+                box-shadow: none;
+                background: #2196f3;
+                color: white;
+            }
+            .app-chat-list-left{
+                margin: 4px 0px;
+                box-shadow: none;
+                background: #5400a3;
+                color: white;
+            }
+        }
+        .app-chat-section-container{
+            width: 100%;
+            height: 100%;
+            padding-top: 24px;
+        }
+
+        #chat-list{
+            &>div{
+                scroll-behavior: smooth;
+                overflow-x: hidden !important;
+                margin-bottom: 0px !important;
+                padding: 16px 0px;
+            }
+        }
+    }
+}

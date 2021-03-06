@@ -1,0 +1,78 @@
+.app-forum-card{
+    .app-forum-card-box{
+        display: flex;
+
+        .app-forum-card-media{
+            width: 250px;
+            height: 250px;
+            border-radius: 4px;
+            background-size: cover !important;
+            background-position: center !important;
+            box-shadow : 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+        }
+
+        .app-forum-card-content{
+            padding: 0px 16px;
+            width: calc(100% - 250px);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .app-forum-card-header{
+                padding: 4px;
+                padding-top: 0px;
+            }
+            .app-forum-card-body{
+                padding: 4px;
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .app-forum-card-footer{
+                padding: 4px;
+            }
+        }
+    }
+}
+
+.app-forum-post-add{
+    position : fixed;
+    bottom: 32px;
+    right: 32px;
+}
+
+.app-forum-dialog-header{
+    position: relative;
+    background: #2196F3;
+
+    .app-forum-dialog-title{
+        flex: 1;
+        margin-left: 16px;
+    }
+}
+.app-forum-dialog-body{
+    height: 100%;
+
+    .app-forum-dialog-edit{
+        height: 100%;
+        width: 40%;
+
+        .card{
+            height: 100%;
+        }
+    }
+    .app-forum-dialog-preview{
+        padding: 24px;
+        height: 100%;
+        width: calc(100% - 40%);
+
+        .card{
+            height: 100%;
+            box-shadow: none;
+        }
+        pre{
+            white-space : pre-wrap;
+        }
+    }
+}

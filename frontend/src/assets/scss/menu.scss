@@ -1,0 +1,65 @@
+.app-menu{
+    outline: none;
+    padding: 0px;
+    .app-menu-title{
+        outline: none;
+        padding: 16px 32px;
+        font-weight: bold;
+        color: #0000008a;
+    }
+    .app-menu-root{
+        padding: 0px;
+        .app-menu-list{
+            max-width: 400px;
+            padding: 16px 32px;
+            transition : 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+            &:hover{
+                background : rgba(0, 0, 0, 0.05)
+            }
+            .MuiCardHeader-content{
+                width: calc(100% - 50px - 16px);
+                display: flex;
+                flex-direction: column;
+                h6, span{
+                    width: 100%;
+                    text-transform: none;
+                }
+            }
+        }
+        .app-menu-avatar{
+            width: 50px;
+            height: 50px;
+        }
+        .app-menu-icon{
+            color: rgba(0, 0, 0, 0.3);
+        }
+        .app-menu-message-content{
+            line-height: unset;
+        }
+    }
+    .app-menu-friend{
+        max-width: 500px;
+        .MuiCardHeader-action{
+            padding-left: 24px;
+        }
+    }
+    .app-menu-message-title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h6, span{
+            width: unset !important;
+        }
+    }
+    .app-menu-notification-title{
+        display: -webkit-box;   
+        -webkit-line-clamp: 2;   
+        -webkit-box-orient: vertical;     
+        overflow: hidden; 
+    }
+    .MuiCardHeader-action{
+        align-self: center;
+    }
+}

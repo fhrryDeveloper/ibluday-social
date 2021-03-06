@@ -1,0 +1,110 @@
+.app-header-appbar{
+    z-index: 1201;
+    background: #2196F3;
+    transition : margin 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+    .app-header-toolbar{
+        min-height: 80px;
+        .app-header-appname {
+            display: none;
+            margin-right: 24px;
+        }
+        .app-header-logo-parent {
+            line-height: 0px;
+            width: 60px;
+            margin-right: 24px;
+        }
+        .app-header-logo-image {
+            width: 60px;
+        }
+        .app-header-menu-button{
+            margin-right: 16px;
+        }
+        .app-header-grow{
+            flex-grow: 1;
+        }
+        .app-header-search{
+            width : 100%;
+            position : relative;
+            border-radius : 4px;
+            background-color : rgba(255, 255, 255, 0.15);
+            margin-right: 16px;
+            margin-left: 0px;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.25),
+            }
+        }
+        .app-header-search-icon{
+            padding: 0px 16px;
+            height: 100%;
+            position: absolute;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .app-header-search-input-root{
+            color : inherit;
+        }
+        .app-header-search-input-input{
+            padding: 8px 8px 8px 0px;
+            padding-left : calc(1em + 32px);
+            transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            width : 100%
+        }
+        .app-header-section-desktop{
+            display: none
+        }
+        .app-header-section-mobile{
+            display: flex,
+        }
+        .app-header-divider{
+            background: #00BCD4;
+            margin: revert;
+            margin-right : 16px;
+            margin-left : 16px;
+            border-radius : 10px;
+        }
+        @media (min-width:960px) {
+            .app-header-search-input-input {
+                width: 20ch;
+            }
+            .app-header-section-desktop{
+                display: flex
+            }
+            .app-header-section-mobile{
+                display: none
+            }
+        }
+        @media (min-width:600px) {
+            .app-header-appname {
+                display: block;
+            }
+            .app-header-search {
+                margin-left: 24px;
+                width: auto;
+            }
+        }
+    }
+}
+
+.app-header-setting{
+    width: 200px;
+    outline: none;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.app-header-setting-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+        padding-left: 8px;
+    }
+}
+.app-header-setting-user-avater{
+    width: 50px;
+    height: 50px;
+}

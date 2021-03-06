@@ -1,0 +1,259 @@
+.app-route-main{
+    display: flex;
+    margin-top: 80px;
+    .app-route-content{
+        flex-grow: 1;
+        position: absolute;
+        overflow: hidden;
+        left: 88px;
+        width: calc(100% - 88px);
+        height: calc(100% - 80px);
+        transition : 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,width 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    }
+    .app-route-content-shift{
+        left: 240px;
+        width: calc(100% - 240px);
+        transition : 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,width 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    }
+    .app-route-container{
+        height: 100%;
+        width: 100%;
+        padding: 24px;
+    }
+}
+.app-space-header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    min-height: 56px;
+    justify-content: flex-end;
+}
+.app-card-box-shadow{
+    .MuiCardHeader-action{
+        margin-top: 0px;
+    }
+    box-shadow : 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.app-card-badge {
+    color : #4caf50;
+    padding : 0px 8px;
+    font-size : 18px;
+    top : 1px;
+    position : relative
+}
+.app-inner-media {
+    height: 0px;
+    padding-top : 56.25%; // 16:9
+}
+.app-space-between-cards{
+    padding : 8px
+}
+.app-post-link {
+    text-decoration : none;
+    color : #2196F3;
+    font-weight : bold
+}
+.app-expand {
+    transition : transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transform: rotate(0deg);
+    margin-left : auto;
+}
+.app-expand-open {
+    transform: rotate(180deg)
+}
+.app-list-card {
+    padding : 4px 8px;
+    position : relative;
+}
+.app-card-no-padding{
+    padding: 0px !important;
+}
+.app-avartar {
+    background : transparent;
+}
+.app-friend-add-icon {
+    transition : 0.5s;
+}
+
+.app-profile-edit-cover-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .app-profile-modal-paper{
+        box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 5px 8px 0px rgba(0,0,0,0.14), 0px 1px 14px 0px rgba(0,0,0,0.12);
+        background: #fff;
+        outline: none;
+        max-height: 50%;
+    }
+}
+.app-profile-edit-cover{
+    position : absolute;
+    bottom: 32px;
+    right: 16px;
+    height: 50px;
+    width: 50px;
+    background-color : #ffffff30;
+    transform : translateX(50%);
+    
+    &.upload{
+        right: calc(50% + 80px);
+        background: rgba(80, 80, 255, 0.5);
+    }
+    &.save{
+        right: calc(50%);
+        background: rgba(80, 255, 80, 0.5);
+    }
+    &.cancel{
+        right: calc(50% - 80px);
+        background: rgba(255, 80, 80, 0.5);
+    }
+}
+@media (max-width: 959.95px){
+    .app-grid-mini-one {
+        display: none;
+    }
+}
+@media (max-width: 599.95px){
+    .app-grid-mini-one {
+        display: block;
+    }
+}
+@media (max-width:1279.95px) {
+    .app-grid-mini-two {
+      display: none;
+    }
+}
+@media (max-width:599.95px) {
+    .app-grid-mini-two {
+      display: block;
+    }
+}
+.app-signup-country-option{
+    font-size: 15px;
+    & span{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+
+//app styles
+.app-styles-hide{
+    display: none;
+}
+.app-styles-dialog{
+    position: relative;
+    z-index: 99999999999;
+    
+    .MuiDialog-paper{
+        min-width: 250px;
+        min-height: 250px;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .app-styles-dialog-spinner{
+        position: relative;
+    }
+    .app-styles-dialog-progress{
+        color: red;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        z-index: 1;
+    }
+    .app-styles-dialog-loading{
+        opacity: 0;
+        transition: 0.5s cubic-bezier();
+        &.app-styles-dialog-success{
+            background: green;
+            opacity: 1;
+        }
+    }
+}
+.app-styles-progress-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
+    padding-bottom: 24px;
+
+    .app-styles-progress-bar{
+        color: #4CAF50;
+    }
+    .app-styles-progress-value{
+        position: absolute;
+    }
+}
+.app-styles-friends{
+    .app-styles-card-tab-container{
+        min-height: 30px;
+        padding-left: 16px;
+        button {
+            min-width: 60px !important;
+            font-size: 12px;
+            min-height: initial;
+        }
+    }
+}
+.app-styles-card-header{
+    padding: 12px 16px;
+}
+.app-styles-blog-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .app-styles-blog-avatar{
+        display: flex;
+        .app-styles-blog-avatar-group{
+            display: flex;
+            padding: 0px 8px;
+            align-items: center;
+            .MuiAvatar-root{
+                width: 30px;
+                height: 30px;
+            }
+            .MuiAvatar-colorDefault{
+                background: transparent;
+                color: rgba(0, 0, 0, 0.54);
+                font-size: 14px;
+            }
+        }
+    }
+    .app-styles-blog-state{
+        padding: 0px 8px;
+    }
+}
+.app-styles-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px !important;
+
+    .app-styles-card-header-tabs{
+        height: 100%;
+    }
+    .app-styles-card-header-search{
+        padding: 0px 16px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+    }
+}
+.app-styles-pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .app-styles-pagination-perpage{
+        span{
+            margin: 0px 10px;
+        }
+    }
+}
+.app-styles-card-header-actions{
+    &.active{
+        color: #2196f3;
+        background: rgba(0,0,0,.05);
+    }
+}
